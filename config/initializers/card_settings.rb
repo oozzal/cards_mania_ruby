@@ -20,6 +20,7 @@ FACES = {
   "Badshah" => 13,
   "Ekka" => 14
 }
+
 # Suits Constants
 PAANE = 1
 CHIDI = 2
@@ -43,3 +44,4 @@ EKKA = 1
 
 NO_OF_SUITS = SUITS.length
 NO_OF_FACES = FACES.length
+

@@ -42,8 +42,7 @@ class Hand
       elsif @value == HAND_VALUES[:color] || @value == HAND_VALUES[:top]
         @face_values.zip(hand.face_values).each do |first, second|
           next if first == second
-          return true if first > second
-          return false
+          return first > second
         end
         # if all the cards are same
         return false
@@ -56,7 +55,7 @@ class Hand
   end
 
   private
-  
+
   def determine_hand_value
     @face_values = @cards.map(&:face_value)
     @suit_values = @cards.map(&:suit_value)
@@ -67,7 +66,7 @@ class Hand
     return HAND_VALUES[:joot] if is_joot?
     return HAND_VALUES[:top]
   end
-  
+
   def is_trial?
     @face_values.uniq.length == 1
   end
@@ -91,3 +90,4 @@ class Hand
   end
 
 end
+

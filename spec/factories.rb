@@ -6,3 +6,4 @@ FactoryGirl.define do
     no_of_players 2
   end
 end
+

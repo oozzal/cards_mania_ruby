@@ -73,7 +73,7 @@ describe "An instance of", Player do
             @player.hand = player_cards
             @another_player.hand = another_player_cards
           end
-          
+
           it "the player that shows should loose" do
             # another player is showing the cards, hence looses
             @another_player.wins(@player).should eql false
@@ -84,3 +84,4 @@ describe "An instance of", Player do
     end
   end
 end
+

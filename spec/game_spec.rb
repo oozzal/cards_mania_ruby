@@ -59,3 +59,4 @@ describe 'An instance of', Game do
 
   end
 end
+

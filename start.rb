@@ -6,4 +6,3 @@ game = Game.new
 system "clear"
 puts game.start(ARGV[0])
 
-

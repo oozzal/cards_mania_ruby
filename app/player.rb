@@ -16,8 +16,8 @@ class Player
   end
 
   def wins(player)
-    return true if self.hand.is_greater_than? player.hand
-    false
+    self.hand.is_greater_than? player.hand
   end
-  
+
 end
+

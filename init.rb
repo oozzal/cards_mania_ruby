@@ -20,3 +20,4 @@ requires_dir.each do |require_dir|
 end
 # Initialize game settings and configurations
 Dir.glob("#{APP_ROOT}/config/initializers/*.rb").each {|init| load init }
+
